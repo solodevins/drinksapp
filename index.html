@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Bar & Drinks Menu</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Каталог напитков</h1>
+        <p>Выберите позицию для заказа или просмотра рецепта</p>
+    </div>
+
+    <div class="container">
+        <!-- Карточка 1 -->
+        <div class="card" id="card1" data-id="1">
+            <div class="image-wrapper">
+                <img src="1.png" alt="Добрый Кола" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=300&q=80'">
+                <span class="badge">Газировка</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Добрый Кола</h3>
+                <p class="card-desc">Классический газированный напиток. Идеально со льдом.</p>
+                <div class="card-footer">
+                    <span class="price">89 ₽</span>
+                    <button class="select-btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="card" id="card2" data-id="6">
+            <div class="image-wrapper">
+                <img src="2.png" alt="Мохито" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=300&q=80'">
+                <span class="badge">Коктейль</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Мохито б/а</h3>
+                <p class="card-desc">Свежая мята, лайм, тростниковый сахар и содовая.</p>
+                <div class="card-footer">
+                    <span class="price">250 ₽</span>
+                    <button class="select-btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
