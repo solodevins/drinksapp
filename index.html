@@ -373,15 +373,15 @@
             renderCards();
         }
 
-        if (tg) {
-            tg.onEvent("mainButtonClicked", () => {
-                if (selectedDrinkId) {
-                    if (tg.HapticFeedback) tg.HapticFeedback.notificationOccurred("success");
-                    tg.sendData(selectedDrinkId);
-                }
-            });
-        }
 
+if (tg?.MainButton) {
+    tg.MainButton.onClick(() => {
+        if (selectedDrinkId) {
+            if (tg.HapticFeedback) tg.HapticFeedback.notificationOccurred("success");
+            tg.sendData(String(selectedDrinkId));
+        }
+    });
+}
         // Первичный запуск отрисовки
         renderCards();
     </script>
